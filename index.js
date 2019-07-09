@@ -1,0 +1,160 @@
+let HTTP=require('http');
+let URL=require('url');
+let Process=function(req,res){
+	res.writeHead(200, {'content-type':'text/Html'});res.write("<html>");
+	res.write("<center>");
+	res.write("<b>Welcome to</b>");
+	res.write("<h1>Nationwide</h1><br />");
+	res.write("</center>");
+	console.log(URL.parse(req.url,true).pathname);
+	let lookingFor = URL.parse(req.url,true).pathname;
+	if (lookingFor=="/"){
+		res.write("<nav>");
+		res.write("<a href='http://localhost:2053/NBS'>Nationwide</a> | ")
+		res.write("<a href='http://localhost:2053/QA'>Local QA Consulting</a> | ")
+		res.write("<a href='https://www.qa.com/learners/graduate-academy/'>QA Consulting</a>")
+		res.write("</nav>");
+		res.write("<p> This is your lovely home page, from here all things are possible.</p>")
+
+	}
+	else if (lookingFor =="/NBS"){
+		res.write("<nav>");
+			res.write("<a href='http://localhost:2053/'>Home</a>");
+			res.write("</nav>");
+			res.write("<p>You've landed on the NBS page and you should make improvements here <br />");
+			res.write("<a href='https://www.nationwide.co.uk/'>Nationwide home page</a></p>");
+	}
+	else if (lookingFor =="/QA"){
+		res.write("<a href='http://localhost:2053/'>Home</a> | ");
+		res.write("<a href='https://www.qa.com/learners/graduate-academy/'>QA Consulting</a>");
+		res.write("</nav>");
+		res.write("<center>");
+		res.write("<p>A long long time ago<br \>I can still remember how<br \>That music used to make me smile<br \>");
+res.write("And I knew if I had my chance<br />");
+res.write("That I could make those people dance<br />");
+res.write("And maybe they would be happy for a while<br />");
+res.write("But February made me shiver<br />");
+res.write("With every paper I had deliver<br />");
+res.write("Bad news on the doorstep<br />");
+res.write("I could not take one more step<br />");
+res.write("I cannot remember if I cried<br />");
+res.write("When I read about his widowed bride<br />");
+res.write("Something touched me deep inside<br />");
+res.write("The day the music died <br />");
+res.write("So<br />");
+res.write("Bye, bye Miss American Pie<br \>");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("And them good ole boys were drinking whiskey and rye<br />");
+res.write("Singing this will be the day that I die<br />");
+res.write("This will be the day that I die<br />");
+res.write("Did you write the book of love<br />");
+res.write("If the Bible tells you so?<br />");
+res.write("Do you believe in rock and roll?<br />");
+res.write("Can music save your mortal soul?<br />");
+res.write("And can you teach me how to dance real slow?<br />");
+res.write("Well, I know that you are in love with him<br />");
+res.write("Beause I saw you dancing in the gym<br />");
+res.write("You both kicked off your shoes<br />");
+res.write("Man, I dig those rhythm and blues<br />");
+res.write("I was a lonely teenage broncing buck<br />");
+res.write("With a pink carnation and a pickup truck<br />");
+res.write("But I knew I was out of luck<br />");
+res.write("The day the music died<br />");
+res.write("I started singing<br />");
+res.write("Bye, bye Miss American Pie<br />");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("And them good ole boys were drinking whiskey and rye<br />");
+res.write("Singing this will be the day that I die<br />");
+res.write("This will be the day that I die<br />");
+res.write("Now, for ten years we have been on our own<br />");
+res.write("And moss grows fat on a rolling stone<br />");
+res.write("But, that is not how it used to be<br />");
+res.write("When the jester sang for the king and queen<br />");
+res.write("In a coat he borrowed from James Dean<br />");
+res.write("And a voice that came from you and me<br />");
+res.write("Oh and while the king was looking down<br />");
+res.write("The jester stole his thorny crown<br />");
+res.write("The courtroom was adjourned<br />");
+res.write("No verdict was returned<br />");
+res.write("And while Lennon read a book on Marx<br />");
+res.write("The quartet practiced in the park<br />");
+res.write("And we sang dirges in the dark<br />");
+res.write("The day the music died<br />");
+res.write("We were singing<br />");
+res.write("Bye, bye Miss American Pie<br />");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("Them good ole boys were drinking whiskey and rye<br />");
+res.write("And singing this will be the day that I die<br />");
+res.write("This will be the day that I die<br />");
+res.write("Helter skelter in a summer swelter<br />");
+res.write("The birds flew off with a fallout shelter<br />");
+res.write("Eight miles high and falling fast<br />");
+res.write("It landed foul on the grass<br />");
+res.write("The players tried for a forward pass<br />");
+res.write("With the jester on the sidelines in a cast<br />");
+res.write("Now the half-time air was sweet perfume<br />");
+res.write("While sergeants played a marching tune<br />");
+res.write("We all got up to dance<br />");
+res.write("Oh, but we never got the chance<br />");
+res.write("Beause the players tried to take the field<br />");
+res.write("The marching band refused to yield<br />");
+res.write("Do you recall what was revealed<br />");
+res.write("The day the music died?<br />");
+res.write("We started singin'<br />");
+res.write("Bye, bye Miss American Pie<br />");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("Them good ole boys were drinking whiskey and rye<br />");
+res.write("And singin' this'll be the day that I die<br />");
+res.write("This'll be the day that I die<br />");
+res.write("Oh, and there we were all in one place<br />");
+res.write("A generation lost in space<br />");
+res.write("With no time left to start again<br />");
+res.write("So come on Jack be nimble, Jack be quick<br />");
+res.write("Jack Flash sat on a candlestick<br />");
+res.write("'Cause fire is the devil's only friend<br />");
+res.write("Oh and as I watched him on the stage<br />");
+res.write("My hands were clenched in fists of rage<br />");
+res.write("No angel born in Hell<br />");
+res.write("Could break that Satan's spell<br />");
+res.write("And as the flames climbed high into the night<br />");
+res.write("To light the sacrificial rite<br />");
+res.write("I saw Satan laughing with delight<br />");
+res.write("The day the music died<br />");
+res.write("He was singin'<br />");
+res.write("Bye, bye Miss American Pie<br />");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("Them good ole boys were drinking whiskey and rye<br />");
+res.write("Singin' this'll be the day that I die<br />");
+res.write("This'll be the day that I die<br />");
+res.write("I met a girl who sang the blues<br />");
+res.write("And I asked her for some happy news<br />");
+res.write("But she just smiled and turned away<br />");
+res.write("I went down to the sacred store<br />");
+res.write("Where I'd heard the music years before<br />");
+res.write("But the man there said the music wouldn't play<br />");
+res.write("And in the streets the children screamed<br />");
+res.write("The lovers cried, and the poets dreamed<br />");
+res.write("But not a word was spoken<br />");
+res.write("The church bells all were broken<br />");
+res.write("And the three men I admire most<br />");
+res.write("The Father, Son, and the Holy Ghost<br />");
+res.write("They caught the last train for the coast<br />");
+res.write("The day the music died<br />");
+res.write("And they were singing<br />");
+res.write("Bye, bye Miss American Pie<br />");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("And them good ole boys were drinking whiskey and rye<br />");
+res.write("Singin' this'll be the day that I die<br />");
+res.write("This'll be the day that I die<br />");
+res.write("They were singing<br />");
+res.write("Bye, bye Miss American Pie<br />");
+res.write("Drove my Chevy to the levee but the levee was dry<br />");
+res.write("Them good ole boys were drinking whiskey and rye<br />");
+res.write("Singin' this'll be the day that I die<br /> </p>")
+	}
+	else {  console.log("I just don't know");}
+	res.write("</html>");
+	res.end();
+}
+let server=HTTP.createServer(Process);
+	server.listen(2053);
