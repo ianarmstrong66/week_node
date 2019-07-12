@@ -1,0 +1,29 @@
+<html>
+<head></head>
+<body>
+<h1>Welcome to the entry form</h1>
+<nav>
+<a href='http://localhost:2053/entryform'>Input form</a>   |   
+<a href='http://localhost:2053/showAll'>Show All</a>    |   
+<a href='http://localhost:2053/showEng'>Show Engineers</a>   |   
+<a href='http://localhost:2053/showHR'>Show Engineers</a>   |   
+<a href='http://localhost:2053/showNames'>Show People</a><br><br>
+</nav>
+<hr><br>
+<form action="/insertEmp" method="post">
+<input required=true type="Text" name="empNo" id="empNo" placeholder="Employee No"></input>   
+<input type="button" name="GetEmp" id="GetEmp" value="Get Employee" onclick=""></input><br><br>
+<input required=true type="Text" name="name" id="name" placeholder="Employee name"></input><br><br>
+<input required=true type="email" name="email" id="email" placeholder="Employee email"></input><br><br>
+<input required=true type="Text" name="telephone" id="telephone" placeholder="Employee Tel No"></input><br><br>
+<input required=true type="Text" name="deptID" id="deptID" placeholder="Employee department"></input><br><br>
+<input type="Submit" value="submit">
+</td>
+</form>
+<hr><br>
+<div>
+<input type="button" name="AddEmp" id="AddEmp" value="Add Employee" onclick="insertRec"></input>   
+<input type="button" name="UpdEmp" id="UpdEmp" value="Update Employee"></input>
+</div>
+</body>
+</html>

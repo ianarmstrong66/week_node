@@ -9,8 +9,9 @@ let Process=function(req,res){
 	else if (lookingFor =="/inbox"){
 		console.log("inbox");
 	}
-	else if (lookingFor =="/login"){
+	else if (lookingFor =="/QA"){
 		console.log("login Page");
+		res.write("<a href='https://www.qa.com/learners/graduate-academy/'>QA Consulting</a>")
 	}
 	else {  console.log("I just don't know");}
 	res.end();
